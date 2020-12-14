@@ -23,7 +23,7 @@ class PreProcessor:
                 id_list = []
                 #trim out irrelevant parts of document
                 if 'USTC subject classification' in line:
-                    processed_chunk = lines[10: ix - 2]
+                    processed_chunk = lines[30: ix - 3]
                 #get doc_id
                 if 'ProQuest document ID' in line:
                     id_list = [s for s in line.split() if s.isdigit()]
